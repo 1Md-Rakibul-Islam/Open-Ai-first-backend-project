@@ -8,7 +8,6 @@ app.use(cors());
 app.use(express.json());
 
 const configuration = new Configuration({
-  // apiKey: "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",
   apiKey: process.env.StackBox_OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
